@@ -15,6 +15,15 @@
 
     &__social {
     }
+
+    &__fb {
+    }
+
+    &__tw {
+    }
+
+    &__gp {
+    }
 }
 .logo {
 }
@@ -55,6 +64,8 @@
     &__comments {
     }
 }
+.fa-comment {
+}
 .more-articles {
 }
 .aside {
@@ -73,15 +84,23 @@
 
     &__table {
     }
+
+    &__row {
+    }
+
+    &__header {
+    }
+
+    &__data {
+        &_not-in-june {
+        }
+
+        &_today {
+        }
+    }
 }
 .news {
-    &__upper-part {
-    }
-
     &__title {
-    }
-
-    &__line {
     }
 
     &__article {
