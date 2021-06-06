@@ -1,12 +1,19 @@
 @import "reset.scss";
 .header {
-    &__list {
-    }
 }
 .wrapper {
 }
-.list {
+.menu {
+    &__items {
+    }
+
     &__item {
+    }
+
+    &__copy {
+    }
+
+    &__social {
     }
 }
 .logo {
@@ -21,33 +28,56 @@
     &__image {
     }
 
+    &__text {
+    }
+
     &__title {
     }
-}
-.info {
-}
-.stats {
-}
-.more-articles {
-}
-.aside {
-    &__form {
-    }
-}
-.calendar {
-    &__upper-part {
+
+    &__info {
     }
 
     &__date {
     }
 
+    &__author {
+    }
+
+    &__theme {
+    }
+
+    &__description {
+    }
+
+    &__views {
+    }
+
+    &__comments {
+    }
+}
+.more-articles {
+}
+.aside {
+}
+.search-form {
+}
+.calendar {
+    &__upper-part {
+    }
+
     &__arrow {
+    }
+
+    &__date {
     }
 
     &__table {
     }
 }
 .news {
+    &__upper-part {
+    }
+
     &__title {
     }
 
@@ -64,6 +94,4 @@
     }
 }
 .footer {
-    &__copy {
-    }
 }
