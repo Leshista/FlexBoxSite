@@ -1,36 +1,63 @@
 @import "reset.scss";
-.header {
+/*=====PAGE====*/
+a {
+    text-decoration: none;
+    color: #000;
 }
 .wrapper {
+    width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+}
+@font-face {
+    font-family: "Proxima Nova";
+    src: url(/fonts/ProximaNova/ProximaNova-Reg.otf) format(opentype);
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    font-variant: normal;
+}
+/*=====HEADER=====*/
+.header {
+    background-color: #f7c61d;
+    height: 66px;
 }
 .menu {
+    height: 100%;
+    display: flex;
+    align-items: center;
     &__items {
+        display: flex;
+        justify-content: space-between;
+        &_left {
+            width: 300px;
+            margin-left: 70px;
+        }
+        &_right {
+            width: 347px;
+            margin-right: 23px;
+        }
     }
-
     &__item {
-    }
-
-    &__copy {
-    }
-
-    &__social {
-    }
-
-    &__fb {
-    }
-
-    &__tw {
-    }
-
-    &__gp {
+        font-family: "Proxima Nova", sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+        a:hover {
+            color: #fff;
+            text-shadow: -1px 1px 1px #000;
+        }
     }
 }
 .logo {
+    width: 430px;
+    text-align: center;
 }
+/*=====MAIN=====*/
 .main {
 }
 .title {
 }
+/*=Articles=*/
 .articles {
 }
 .article {
@@ -66,10 +93,12 @@
 }
 .more-articles {
 }
+/*===Aside===*/
 .aside {
 }
 .search-form {
 }
+/*=Calendar=*/
 .calendar {
     &__upper-part {
     }
@@ -97,6 +126,7 @@
         }
     }
 }
+/*=News=*/
 .news {
     &__title {
     }
@@ -110,5 +140,22 @@
     &__text {
     }
 }
+/*=====FOOTER=====*/
 .footer {
+    .menu {
+        &__copy {
+        }
+
+        &__social {
+        }
+
+        &__fb {
+        }
+
+        &__tw {
+        }
+
+        &__gp {
+        }
+    }
 }

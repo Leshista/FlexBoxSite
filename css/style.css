@@ -129,3 +129,82 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+/*=====PAGE====*/
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.wrapper {
+  width: 1170px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url(/fonts/ProximaNova/ProximaNova-Reg.otf) format(opentype);
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-variant: normal;
+}
+
+/*=====HEADER=====*/
+.header {
+  background-color: #f7c61d;
+  height: 66px;
+}
+
+.menu {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu__items_left {
+  width: 300px;
+  margin-left: 70px;
+}
+
+.menu__items_right {
+  width: 347px;
+  margin-right: 23px;
+}
+
+.menu__item {
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.menu__item a:hover {
+  color: #fff;
+  text-shadow: -1px 1px 1px #000;
+}
+
+.logo {
+  width: 430px;
+  text-align: center;
+}
+
+/*=====MAIN=====*/
+/*=Articles=*/
+/*===Aside===*/
+/*=Calendar=*/
+/*=News=*/
+/*=====FOOTER=====*/
