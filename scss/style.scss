@@ -155,6 +155,25 @@ a {
 }
 .more-articles {
     text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    a {
+        width: 170px;
+        height: 40px;
+        font-family: "Roboto", sans-serif;
+        font-weight: normal;
+        font-size: 12px;
+        border: 1px solid #f7cb33;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 80px;
+        &:hover {
+            background-color: #f7c61d;
+            color: #fff;
+        }
+    }
 }
 /*===Aside===*/
 .aside {
@@ -163,6 +182,34 @@ a {
     padding-left: 30px;
 }
 .search-form {
+    &__block {
+        width: 100%;
+        height: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border: 1px solid #cecece;
+        border-radius: 15px;
+        a {
+            padding-left: 10px;
+            &:hover {
+                color: #e3b002;
+            }
+        }
+    }
+    &__search {
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 15px;
+        padding-left: 8px;
+        &::placeholder {
+            font-family: "Roboto", sans-serif;
+            font-weight: normal;
+            font-size: 14px;
+            color: #999999;
+        }
+    }
 }
 /*=Calendar=*/
 .calendar {
