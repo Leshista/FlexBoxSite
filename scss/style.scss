@@ -213,29 +213,85 @@ a {
 }
 /*=Calendar=*/
 .calendar {
+    width: 240px;
+    height: 235px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    margin: 38px 0 48px 0;
     &__upper-part {
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 15px;
     }
 
     &__arrow {
+        color: #a0a0a0;
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     &__date {
+        font-family: "Proxima Nova", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
     }
 
     &__table {
     }
 
     &__row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
 
     &__header {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 11px;
+        box-sizing: border-box;
+        width: 34px;
+        height: 27px;
+        background-color: #e7e7e7;
+        color: #888888;
+        border: 1px solid #fff;
+        border: 1px solid #ededed;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
 
     &__data {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        box-sizing: border-box;
+        width: 34px;
+        height: 34px;
+        color: #4d4d4d;
+        border: 1px solid #e8e8e8;
+        border: 1px solid #f7f7f7;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
         &_not-in-june {
+            color: #c1c1c1;
         }
 
         &_today {
+            background-color: #f7c61d;
+            color: #fff;
+            &:hover {
+                color: #999999;
+                cursor: pointer;
+            }
         }
     }
 }
