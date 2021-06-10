@@ -186,6 +186,9 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .menu__items {
@@ -195,6 +198,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  text-transform: uppercase;
 }
 
 .menu__items_left {
@@ -210,7 +214,6 @@ a {
 .menu__item {
   font-family: "Proxima Nova", sans-serif;
   font-weight: 600;
-  text-transform: uppercase;
 }
 
 .menu__item a:hover {
@@ -264,6 +267,10 @@ a {
   margin-right: 30px;
 }
 
+.article__image:hover {
+  cursor: pointer;
+}
+
 .article__text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -313,6 +320,10 @@ a {
   color: #999999;
 }
 
+.article__data:nth-of-type(2):hover, .article__data:nth-of-type(3):hover {
+  cursor: pointer;
+}
+
 .article__data i {
   color: #999999;
 }
@@ -330,6 +341,10 @@ a {
 
 .article__description i {
   color: #e3b002;
+}
+
+.article__description:hover {
+  cursor: pointer;
 }
 
 .more-articles {
@@ -611,3 +626,54 @@ a {
 }
 
 /*=====FOOTER=====*/
+.footer {
+  height: 66px;
+  background-color: #f8cc33;
+}
+
+.footer .menu__copy {
+  width: 271px;
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 100;
+  color: #a78613;
+}
+
+.footer .menu__items-footer {
+  width: 371px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: none;
+}
+
+.footer .menu__social {
+  width: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .menu .social-link {
+  width: 43px;
+  height: 43px;
+  display: block;
+  margin-left: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .menu .social-link:hover {
+  color: #fdf3ce;
+}

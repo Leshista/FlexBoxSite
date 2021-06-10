@@ -43,9 +43,11 @@ a {
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     &__items {
         display: flex;
         justify-content: space-between;
+        text-transform: uppercase;
         &_left {
             width: 300px;
             margin-left: 70px;
@@ -58,7 +60,6 @@ a {
     &__item {
         font-family: "Proxima Nova", sans-serif;
         font-weight: 600;
-        text-transform: uppercase;
         a:hover {
             color: #fff;
             text-shadow: -1px 1px 1px #000;
@@ -96,6 +97,9 @@ a {
     }
     &__image {
         margin-right: 30px;
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     &__text {
@@ -136,6 +140,9 @@ a {
                 content: "|  ";
                 color: #999999;
             }
+            &:hover {
+                cursor: pointer;
+            }
         }
         i {
             color: #999999;
@@ -151,6 +158,9 @@ a {
         color: #555555;
         i {
             color: #e3b002;
+        }
+        &:hover {
+            cursor: pointer;
         }
     }
 }
@@ -335,20 +345,43 @@ a {
 }
 /*=====FOOTER=====*/
 .footer {
+    height: 66px;
+    background-color: #f8cc33;
     .menu {
         &__copy {
+            width: 271px;
+            font-family: "Proxima Nova", sans-serif;
+            font-weight: 100;
+            color: #a78613;
+        }
+
+        &__items-footer {
+            width: 371px;
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            text-transform: none;
         }
 
         &__social {
+            width: 170px;
+            display: flex;
+            justify-content: space-between;
         }
 
-        &__fb {
-        }
-
-        &__tw {
-        }
-
-        &__gp {
+        .social-link {
+            width: 43px;
+            height: 43px;
+            display: block;
+            margin-left: 15px;
+            background-color: #fff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover {
+                color: #fdf3ce;
+            }
         }
     }
 }
