@@ -96,8 +96,11 @@ a {
     &:last-of-type {
         margin-bottom: 82px;
     }
-    &__image:hover {
-        cursor: pointer;
+    &__image {
+        margin-right: 2rem;
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     &__text {
@@ -403,6 +406,7 @@ a {
         margin-right: 1rem;
         &__image {
             margin-bottom: 1rem;
+            margin-right: 0;
             img {
                 width: 100%;
             }
