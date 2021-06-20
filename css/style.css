@@ -168,14 +168,19 @@ a {
 
 .wrapper {
   width: 1170px;
-  height: 100%;
   margin: 0 auto;
 }
 
 /*=====HEADER=====*/
 .header {
   background-color: #f7c61d;
-  height: 66px;
+  min-height: 66px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .menu {
@@ -617,7 +622,13 @@ a {
 
 /*=====FOOTER=====*/
 .footer {
-  height: 66px;
+  min-height: 66px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #f8cc33;
 }
 
