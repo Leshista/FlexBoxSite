@@ -1,0 +1,42 @@
+@mixin hamburgerMenuItemsHidden {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    z-index: 1;
+}
+@mixin hamburgerMenuBackgroundEnabled {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 10.5rem;
+    background-color: #f7c61d;
+    position: absolute;
+    top: 100%;
+}
+.hamburger-menu {
+    display: block;
+}
+.header-open .menu__items-left,
+.header-open .menu__items-right {
+    display: block;
+}
+.menu__items-left,
+.menu__items-right {
+    @include hamburgerMenuItemsHidden();
+}
+.menu__items-left {
+    left: 15vw;
+    .menu__item {
+        margin: 2rem 0;
+    }
+}
+.menu__items-right {
+    left: 50vw;
+    .menu__item {
+        margin: 2rem 0;
+    }
+}
+.header-open::after {
+    @include hamburgerMenuBackgroundEnabled();
+}

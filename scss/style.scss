@@ -49,11 +49,11 @@ a {
         display: flex;
         justify-content: space-between;
         text-transform: uppercase;
-        &_left {
+        &-left {
             width: 300px;
             margin-left: 70px;
         }
-        &_right {
+        &-right {
             width: 347px;
             margin-right: 23px;
         }
@@ -406,6 +406,15 @@ a {
         padding: 0 1rem;
         box-sizing: border-box;
     }
+    @import "hamburgerMenu.scss";
+    .header-open::after,
+    .menu__items-left,
+    .menu__items-right {
+        top: 8%;
+    }
+    .logo {
+        justify-content: flex-start;
+    }
     .main__container {
         flex-direction: column;
     }
@@ -480,7 +489,14 @@ a {
 }
 /*===Phone===*/
 @media (max-width: 36.125em) {
-    .articles {
+    .header {
+        position: relative;
+    }
+    @import "hamburgerMenu.scss";
+    .logo {
+        justify-content: flex-start;
+    }
+    .menu__items .articles {
         justify-content: center;
     }
     .article,
