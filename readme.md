@@ -1,1 +1,1 @@
-### Fully Responsive ##Site made with HTML, CSS, SCSS, BEM-Methodology and a bit of Pre-made JS
+### Fully Responsive site made with HTML, CSS, SCSS, BEM-Methodology and a bit of Pre-made JS
